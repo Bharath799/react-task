@@ -62,10 +62,10 @@ class Users extends React.Component{
 
                   <tbody>
                   {
-                        this.state.users.map((user)=>{
+                        this.state.users.map((user,i)=>{
                             return(
                               <tr key={user.id}>
-                                <td>{user.id}</td>
+                                <td>{i+1}</td>
                                 <td>{user.name}</td>
                                 <td>{user.username}</td>
                                 <td>{user.email}</td>
